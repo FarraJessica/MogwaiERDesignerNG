@@ -348,6 +348,9 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
                 new PreferencesCommand(), this,
                 ERDesignerBundle.PREFERENCES);
 
+        DefaultAction theCloseAction = new DefaultAction(
+            e-> commandClose(), this, ERDesignerBundle.CLOSEMODEL);
+
         DefaultAction theSaveAction = new DefaultAction(new SaveToFileCommand(
         ), this, ERDesignerBundle.SAVEMODEL);
         theSaveAction.putValue(DefaultAction.HOTKEY_KEY, KeyStroke
@@ -371,7 +374,6 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
 
         DefaultAction theNewAction = new DefaultAction(
                 e -> commandNew(), this, ERDesignerBundle.NEWMODEL);
-
         DefaultAction theLruAction = new DefaultAction(this,
                 ERDesignerBundle.RECENTLYUSEDFILES);
 
@@ -492,6 +494,10 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
 
         theFileMenu.add(new DefaultMenuItem(theNewAction));
         theFileMenu.addSeparator();
+
+        theFileMenu.add(new DefaultMenuItem(theCloseAction));
+        theFileMenu.addSeparator();
+        
         DefaultMenuItem theSaveItem = new DefaultMenuItem(theSaveAction);
         theFileMenu.add(theSaveItem);
         KeyStroke theStroke = (KeyStroke) theSaveAction
@@ -950,6 +956,17 @@ public final class ERDesignerComponent implements ResourceHelperProvider {
 
         worldConnector.setStatusText(getResourceHelper().getText(
                 ERDesignerBundle.NEWMODELCREATED));
+    }
+
+    protected void commandClose() {
+
+        Model theModel = worldConnector.createNewModel();
+        setModel(theModel);
+
+        setupViewForNothing();
+
+        worldConnector.setStatusText(getResourceHelper().getText(
+                ERDesignerBundle.CLOSEDMODEL));
     }
 
     /**

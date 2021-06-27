@@ -11,36 +11,42 @@
         <Entry id="RECENTLYUSEDFILES">
             <Text lang="de">Zuletzt benutzte Dateien</Text>
             <Text lang="en">Recently used files</Text>
+            <Icon>/de/erdesignerng/icons/documents_folder.png</Icon>
         </Entry>
         <Entry id="NEWMODEL">
             <Text lang="de">Neues Modell</Text>
             <Text lang="en">New model</Text>
-            <Icon>/de/erdesignerng/icons/new.png</Icon>
+            <Icon>/de/erdesignerng/icons/new_file.png</Icon>
+        </Entry>
+         <Entry id="CLOSEMODEL">
+            <Text lang="de">Modell schlieben</Text>
+            <Text lang="en">Close model</Text>
+            <Icon>/de/erdesignerng/icons/folders.png</Icon>
         </Entry>
         <Entry id="SAVEMODEL">
             <Text lang="de">Modell speichern</Text>
             <Text lang="en">Save model</Text>
-            <Icon>/de/erdesignerng/icons/script_save.png</Icon>
+            <Icon>/de/erdesignerng/icons/save.png</Icon>
         </Entry>
         <Entry id="SAVEMODELAS">
             <Text lang="de">Modell speichern als...</Text>
             <Text lang="en">Save model as...</Text>
-            <Icon>/de/erdesignerng/icons/script_save.png</Icon>
+            <Icon>/de/erdesignerng/icons/save_as.png</Icon>
         </Entry>
         <Entry id="SAVEMODELTODB">
             <Text lang="de">Modell in Repository speichern...</Text>
             <Text lang="en">Save model to repository...</Text>
-            <Icon>/de/erdesignerng/icons/script_save.png</Icon>
+            <Icon>/de/erdesignerng/icons/save_all.png</Icon>
         </Entry>
         <Entry id="LOADMODELFROMDB">
             <Text lang="de">Modell aus Repository laden...</Text>
             <Text lang="en">Load model from repository...</Text>
-            <Icon>/de/erdesignerng/icons/folder.png</Icon>
+            <Icon>/de/erdesignerng/icons/open_folder.png</Icon>
         </Entry>
         <Entry id="LOADMODEL">
             <Text lang="de">Modell laden...</Text>
             <Text lang="en">Load model...</Text>
-            <Icon>/de/erdesignerng/icons/folder.png</Icon>
+            <Icon>/de/erdesignerng/icons/open_folder.png</Icon>
         </Entry>
         <Entry id="EXITPROGRAM">
             <Text lang="de">Programm beenden</Text>
@@ -50,6 +56,7 @@
         <Entry id="EXPORT">
             <Text lang="de">Export</Text>
             <Text lang="en">Export</Text>
+            <Icon>/de/erdesignerng/icons/export.png</Icon>
         </Entry>
         <Entry id="ASSVG">
             <Text lang="de">als SVG</Text>
@@ -83,7 +90,7 @@
         <Entry id="REPOSITORYCONNECTION">
             <Text lang="de">Verbindung zum Repository...</Text>
             <Text lang="en">Repository connection...</Text>
-            <Icon>/de/erdesignerng/icons/database_connect.png</Icon>
+            <Icon>/de/erdesignerng/icons/repository.png</Icon>
         </Entry>
         <Entry id="STOREDDBCONNECTION">
             <Text lang="de">Letzte Datenbankverbindungen</Text>
@@ -386,6 +393,10 @@
         <Entry id="NEWMODELCREATED">
             <Text lang="de">Neues Modell erzeugt</Text>
             <Text lang="en">New model created</Text>
+        </Entry>
+        <Entry id="CLOSEDMODEL">
+            <Text lang="de">Neues Modell schlieben</Text>
+            <Text lang="en">Recently Model Closed</Text>
         </Entry>
         <Entry id="PLEASEDEFINEADATABASECONNECTIONFIRST">
             <Text lang="de">Bitte definieren Sie vorher eine Datenbankverbindung!</Text>
